@@ -9,4 +9,4 @@
 ### Maybe change repository name? -> need to change import, dependencies links as well
     
 ## To do:
-### Order status screen, Payment screen, Payment Success screen
+### Order status screen, Payment screen, Payment Success screen, Prepare for backend integration
