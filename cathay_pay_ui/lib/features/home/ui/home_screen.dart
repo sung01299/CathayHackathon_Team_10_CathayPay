@@ -108,7 +108,7 @@ class _MyHomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 20),
             Container(
-              height: 400,
+              height: 550,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   // color: const Color.fromARGB(1, 241, 244, 241),
@@ -269,6 +269,60 @@ class _MyHomeScreenState extends State<HomeScreen> {
                               const SizedBox(width: 225),
                               Text(
                                 "-\$19",
+                                style: GoogleFonts.ubuntu(
+                                    color: const Color(0xff005d63),
+                                    fontSize: 18),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              const CircleAvatar(
+                                backgroundImage:
+                                    AssetImage('assets/images/xhaka.jpeg'),
+                                radius: 25,
+                              ),
+                              const SizedBox(width: 10),
+                              Text(
+                                "Xhaka",
+                                style: GoogleFonts.ubuntu(
+                                    color: const Color(0xff005d63),
+                                    fontSize: 18),
+                              ),
+                              const SizedBox(width: 218),
+                              Text(
+                                "+\$30",
+                                style: GoogleFonts.ubuntu(
+                                    color: const Color(0xff005d63),
+                                    fontSize: 18),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              const CircleAvatar(
+                                backgroundImage:
+                                    AssetImage('assets/images/cazorla.jpeg'),
+                                radius: 25,
+                              ),
+                              const SizedBox(width: 10),
+                              Text(
+                                "Cazorla",
+                                style: GoogleFonts.ubuntu(
+                                    color: const Color(0xff005d63),
+                                    fontSize: 18),
+                              ),
+                              const SizedBox(width: 205),
+                              Text(
+                                "+\$69",
                                 style: GoogleFonts.ubuntu(
                                     color: const Color(0xff005d63),
                                     fontSize: 18),

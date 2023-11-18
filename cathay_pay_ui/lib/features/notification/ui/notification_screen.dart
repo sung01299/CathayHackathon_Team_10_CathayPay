@@ -26,9 +26,10 @@ class _NotificationScreenState extends State<NotificationScreen> {
         children: [
           const SizedBox(height: 20),
           const CircularButton(
-              icon: Icons.priority_high,
-              text: "IMPORTANT: Your payment was",
-              color: Color(0xff037b7a)),
+            icon: Icons.priority_high,
+            text: "IMPORTANT: Your payment was",
+            color: Color(0xff037b7a),
+          ),
           const SizedBox(height: 10),
           CircularButton(
               icon: Icons.back_hand,
