@@ -29,7 +29,12 @@ class _PaymentScreenState extends State<PaymentScreen> {
             const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Flight payment amount"),
+                Text(
+                  "Flight payment amount",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ],
             ),
             const SizedBox(height: 30),
@@ -51,7 +56,12 @@ class _PaymentScreenState extends State<PaymentScreen> {
               children: [
                 Padding(
                   padding: EdgeInsets.all(8.0),
-                  child: Text("Receipient account: SkyPay Aviation"),
+                  child: Text(
+                    "Receipient account: SkyPay Aviation",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -70,7 +80,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                           child: Row(
                             children: [
                               Icon(Icons.apartment, size: 25),
-                              SizedBox(width: 5),
+                              SizedBox(width: 8),
                               Text(
                                 "Card number: 0000 0000 0000 0000",
                                 style: TextStyle(fontSize: 15),
@@ -90,7 +100,12 @@ class _PaymentScreenState extends State<PaymentScreen> {
               children: [
                 Padding(
                   padding: EdgeInsets.all(8.0),
-                  child: Text("Receipient account: SkyPay Aviation"),
+                  child: Text(
+                    "Receipient account: SkyPay Aviation",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -108,8 +123,8 @@ class _PaymentScreenState extends State<PaymentScreen> {
                           padding: EdgeInsets.all(20.0),
                           child: Row(
                             children: [
-                              Icon(Icons.apartment, size: 25),
-                              SizedBox(width: 5),
+                              Icon(Icons.credit_card, size: 25),
+                              SizedBox(width: 8),
                               Text(
                                 "Card number: 0000 0000 0000 0000",
                                 style: TextStyle(fontSize: 15),
@@ -124,15 +139,14 @@ class _PaymentScreenState extends State<PaymentScreen> {
               ],
             ),
             Expanded(
-              child: Container(
-                color: Colors.green,
-              ),
+              child: Container(),
             ),
             const Padding(
               padding: EdgeInsets.all(8.0),
               child: Row(
                 children: [
                   Icon(Icons.shield),
+                  SizedBox(width: 10),
                   Text(
                       "This transaction is secure and guaranteed under\n our Terms and Conditions"),
                 ],
@@ -143,16 +157,20 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.grey.shade300,
+                      color: const Color(0xff005d63),
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
                           padding: EdgeInsets.all(20.0),
                           child: Text(
                             "Pay now",
-                            style: TextStyle(fontSize: 15),
+                            style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
                           ),
                         ),
                       ],
