@@ -1,7 +1,7 @@
-import 'package:cathay_pay_ui/screens/payment_screen.dart';
+import 'package:cathay_pay_ui/features/payment/ui/payment_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:cathay_pay_ui/screens/home_screen.dart';
-import 'package:cathay_pay_ui/screens/qr_code_screen.dart';
+import 'package:cathay_pay_ui/features/home/ui/home_screen.dart';
+import 'package:cathay_pay_ui/features/qrcode/ui/qr_code_screen.dart';
 
 class BottomBar extends StatefulWidget {
   static const String routeName = '/actual-home';

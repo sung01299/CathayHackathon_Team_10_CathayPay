@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cathay_pay_ui/screens/bottom_bar.dart';
+import 'package:cathay_pay_ui/common/widgets/bottom_bar.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class NotificationRow extends StatelessWidget {
+class CircularButton extends StatelessWidget {
   final IconData icon;
   final String text;
   final Color color;
-  const NotificationRow({
+  const CircularButton({
     Key? key,
     required this.icon,
     required this.text,

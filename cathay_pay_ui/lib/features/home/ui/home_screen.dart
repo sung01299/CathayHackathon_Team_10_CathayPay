@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cathay_pay_ui/screens/notification_screen.dart';
+import 'package:cathay_pay_ui/features/notification/ui/notification_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatefulWidget {

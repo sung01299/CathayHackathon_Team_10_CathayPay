@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cathay_pay_ui/Widget/Notification/Notification_Row.dart';
+import 'package:cathay_pay_ui/common/widgets/circular_button.dart';
 
 class NotificationScreen extends StatefulWidget {
   const NotificationScreen({super.key});
@@ -25,52 +25,52 @@ class _NotificationScreenState extends State<NotificationScreen> {
       body: ListView(
         children: [
           const SizedBox(height: 20),
-          const NotificationRow(
+          const CircularButton(
               icon: Icons.priority_high,
               text: "IMPORTANT: Your payment was",
               color: Color(0xff037b7a)),
           const SizedBox(height: 10),
-          NotificationRow(
+          CircularButton(
               icon: Icons.back_hand,
               text: "Track your payment status.",
               color: Colors.grey.shade300),
           const SizedBox(height: 10),
-          const NotificationRow(
+          const CircularButton(
               icon: Icons.credit_card,
               text: "Payment confirmation received.",
               color: Color(0xff037b7a)),
           const SizedBox(height: 10),
-          NotificationRow(
+          CircularButton(
               icon: Icons.check_circle,
               text: "Payment received, thank you!",
               color: Colors.grey.shade300),
           const SizedBox(height: 10),
-          NotificationRow(
+          CircularButton(
               icon: Icons.sell,
               text: "Payment pending for September.",
               color: Colors.grey.shade300),
           const SizedBox(height: 10),
-          NotificationRow(
+          CircularButton(
               icon: Icons.check_circle,
               text: "Stay updated with important news.",
               color: Colors.grey.shade300),
           const SizedBox(height: 10),
-          NotificationRow(
+          CircularButton(
               icon: Icons.check_circle,
               text: "Payment scheduled for tomorrow.",
               color: Colors.grey.shade300),
           const SizedBox(height: 10),
-          NotificationRow(
+          CircularButton(
               icon: Icons.sell,
               text: "Payment processed successfully.",
               color: Colors.grey.shade300),
           const SizedBox(height: 10),
-          NotificationRow(
+          CircularButton(
               icon: Icons.sell,
               text: "Payment processed successfully.",
               color: Colors.grey.shade300),
           const SizedBox(height: 10),
-          NotificationRow(
+          CircularButton(
               icon: Icons.sell,
               text: "Payment processed successfully.",
               color: Colors.grey.shade300),
