@@ -11,20 +11,17 @@ class BottomBar extends StatefulWidget {
 }
 
 class _BottomBarState extends State<BottomBar> {
-  int currentTab = 0;
+  int currentTab =
+      0; // For future implement, change bottom bar icon color when selected?
 
   final List<Widget> screens = [
     const HomeScreen(),
     const NotificationScreen(),
-    // const NotificationScreen(),
-    // const AccountScreen(),
-    // const FeedScreen(),
+    // Add more slides
   ];
 
   final PageStorageBucket bucket = PageStorageBucket();
   Widget currentScreen = const HomeScreen();
-
-  // final ProfileServices profileServices = ProfileServices();
 
   @override
   Widget build(BuildContext context) {

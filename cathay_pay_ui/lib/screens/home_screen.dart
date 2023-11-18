@@ -18,6 +18,7 @@ class _MyHomeScreenState extends State<HomeScreen> {
             style: TextStyle(
               color: Color(0xff005d63),
               fontWeight: FontWeight.bold,
+              fontSize: 25,
             ),
           ),
           centerTitle: true,
