@@ -9,6 +9,7 @@ class QrCodeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF005d63),
       appBar: AppBar(
+        backgroundColor: Colors.grey.shade200,
         title: Text(
           "QR Code",
           style: GoogleFonts.ubuntu(

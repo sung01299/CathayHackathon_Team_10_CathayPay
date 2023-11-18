@@ -14,6 +14,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.grey.shade200,
         title: Text(
           "Payment",
           style: GoogleFonts.ubuntu(
@@ -69,7 +70,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.grey.shade300,
+                      color: Colors.grey.shade200,
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: Row(
@@ -115,7 +116,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.grey.shade300,
+                      color: Colors.grey.shade200,
                       borderRadius: BorderRadius.circular(30),
                     ),
                     child: Row(
@@ -187,7 +188,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                             Padding(
                               padding: const EdgeInsets.all(20.0),
                               child: Text(
-                                "Pay now",
+                                "Pay Now",
                                 style: GoogleFonts.ubuntu(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,

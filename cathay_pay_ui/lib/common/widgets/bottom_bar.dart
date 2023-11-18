@@ -35,43 +35,47 @@ class _BottomBarState extends State<BottomBar> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
-              icon: const Icon(
-                Icons.home,
-                size: 35,
-                color: Color(0xff005d63),
-              ),
+              icon: Icon(Icons.home,
+                  size: 35,
+                  // color: Color(0xff005d63),
+                  color: currentTab == 0
+                      ? const Color(0xff005d63)
+                      : Colors.grey.shade500),
               onPressed: () {
                 setState(
                   () {
                     currentScreen = const HomeScreen();
+                    currentTab = 0;
                   },
                 );
               },
             ),
             IconButton(
-              icon: const Icon(
-                Icons.qr_code_scanner,
-                size: 45,
-                color: Color(0xff005d63),
-              ),
+              icon: Icon(Icons.qr_code_scanner,
+                  size: 45,
+                  color: currentTab == 1
+                      ? const Color(0xff005d63)
+                      : Colors.grey.shade500),
               onPressed: () {
                 setState(
                   () {
                     currentScreen = const QrCodeScreen();
+                    currentTab = 1;
                   },
                 );
               },
             ),
             IconButton(
-              icon: const Icon(
-                Icons.credit_card,
-                size: 35,
-                color: Color(0xff005d63),
-              ),
+              icon: Icon(Icons.credit_card,
+                  size: 35,
+                  color: currentTab == 2
+                      ? const Color(0xff005d63)
+                      : Colors.grey.shade500),
               onPressed: () => {
                 setState(
                   () {
                     currentScreen = const PaymentScreen();
+                    currentTab = 2;
                   },
                 ),
               },
