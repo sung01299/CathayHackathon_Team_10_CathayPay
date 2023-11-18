@@ -49,7 +49,7 @@ class _MyHomeScreenState extends State<HomeScreen> {
               child: Row(
                 children: [
                   Text(
-                    "My CathayPay Account",
+                    "My Cathay Pay Account",
                     style: GoogleFonts.ubuntu(
                         color: const Color(0xff005d63),
                         fontWeight: FontWeight.bold,
