@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:cathay_pay_ui/features/payment/ui/payment_success.dart';
 
 class PaymentScreen extends StatefulWidget {
   const PaymentScreen({super.key});
@@ -158,34 +159,47 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(0.0),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xff005d63),
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Text(
-                              "Pay now",
-                              style: GoogleFonts.ubuntu(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20),
+            ElevatedButton(
+              style: const ButtonStyle(
+                  backgroundColor:
+                      MaterialStatePropertyAll<Color>(Color(0xff005d63))),
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const PaymentSucessScreen(),
+                  ),
+                );
+              },
+              child: Padding(
+                padding: const EdgeInsets.all(0.0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: const Color(0xff005d63),
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Text(
+                                "Pay now",
+                                style: GoogleFonts.ubuntu(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20),
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ],

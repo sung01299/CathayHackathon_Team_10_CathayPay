@@ -14,7 +14,7 @@ class _MyHomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.grey.shade200,
         title: Text(
           "Cathay Pay",
           style: GoogleFonts.ubuntu(
@@ -59,7 +59,7 @@ class _MyHomeScreenState extends State<HomeScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
@@ -119,7 +119,6 @@ class _MyHomeScreenState extends State<HomeScreen> {
                   Padding(
                     padding: const EdgeInsets.all(20),
                     child: Column(
-                      // mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
@@ -148,7 +147,10 @@ class _MyHomeScreenState extends State<HomeScreen> {
                                 children: [
                                   Row(
                                     children: [
-                                      const Icon(Icons.credit_card),
+                                      const Icon(
+                                        Icons.credit_card,
+                                        color: Color(0xff005d63),
+                                      ),
                                       const SizedBox(width: 10),
                                       Text(
                                         "Credit Card / **** 7798",
