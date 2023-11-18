@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cathaypay-dev-53646-authRole",
+      "UnauthRoleArn": "arn:aws:iam::239630163264:role/amplify-cathaypay-dev-53646-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::239630163264:role/amplify-cathaypay-dev-53646-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-cathaypay-dev-53646-deployment",
+      "UnauthRoleName": "amplify-cathaypay-dev-53646-unauthRole",
+      "StackName": "amplify-cathaypay-dev-53646",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:239630163264:stack/amplify-cathaypay-dev-53646/942d7610-865a-11ee-bb06-0e0e2d7f6e97",
+      "AmplifyAppId": "d2ui4996nllxwt"
+    },
+    "categories": {
+      "auth": {
+        "cathaypay5ad906ae": {}
+      },
+      "api": {
+        "cathaypay": {}
+      }
+    }
+  }
+}

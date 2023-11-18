@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cathay_pay_ui/common/widgets/circular_button.dart';
+import 'package:cathay_pay_ui/common/ui/circular_button.dart';
 
 class NotificationScreen extends StatefulWidget {
   const NotificationScreen({super.key});
