@@ -12,8 +12,7 @@ class BottomBar extends StatefulWidget {
 }
 
 class _BottomBarState extends State<BottomBar> {
-  int currentTab =
-      0; // For future implement, change bottom bar icon color when selected?
+  int currentTab = 0;
 
   final List<Widget> screens = [
     const HomeScreen(),
