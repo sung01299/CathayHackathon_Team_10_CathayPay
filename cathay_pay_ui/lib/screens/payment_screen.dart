@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PaymentScreen extends StatefulWidget {
   const PaymentScreen({super.key});
@@ -12,13 +13,12 @@ class _PaymentScreenState extends State<PaymentScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
+        title: Text(
           "Payment",
-          style: TextStyle(
-            color: Color(0xff005d63),
-            fontWeight: FontWeight.bold,
-            fontSize: 25,
-          ),
+          style: GoogleFonts.ubuntu(
+              color: const Color(0xff005d63),
+              fontWeight: FontWeight.bold,
+              fontSize: 25),
         ),
       ),
       body: Padding(
@@ -26,41 +26,39 @@ class _PaymentScreenState extends State<PaymentScreen> {
         child: Column(
           children: [
             const SizedBox(height: 20),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   "Flight payment amount",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: GoogleFonts.ubuntu(
+                      fontWeight: FontWeight.bold, fontSize: 18),
                 ),
               ],
             ),
             const SizedBox(height: 30),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   "Total amount: \$390.81",
-                  style: TextStyle(
-                    fontSize: 33,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: GoogleFonts.ubuntu(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 33),
                 ),
               ],
             ),
             const SizedBox(height: 30),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Text(
                     "Receipient account: SkyPay Aviation",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: GoogleFonts.ubuntu(
+                        fontWeight: FontWeight.bold, fontSize: 15),
                   ),
                 ),
               ],
@@ -73,17 +71,20 @@ class _PaymentScreenState extends State<PaymentScreen> {
                       color: Colors.grey.shade300,
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: const Row(
+                    child: Row(
                       children: [
                         Padding(
-                          padding: EdgeInsets.all(20.0),
+                          padding: const EdgeInsets.all(20.0),
                           child: Row(
                             children: [
-                              Icon(Icons.apartment, size: 25),
-                              SizedBox(width: 8),
+                              const Icon(Icons.apartment, size: 25),
+                              const SizedBox(width: 8),
                               Text(
                                 "Card number: 0000 0000 0000 0000",
-                                style: TextStyle(fontSize: 15),
+                                style: GoogleFonts.ubuntu(
+                                  color: Colors.black,
+                                  fontSize: 16,
+                                ),
                               ),
                             ],
                           ),
@@ -95,16 +96,15 @@ class _PaymentScreenState extends State<PaymentScreen> {
               ],
             ),
             const SizedBox(height: 30),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    "Receipient account: SkyPay Aviation",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
+                    "Payment card details",
+                    style: GoogleFonts.ubuntu(
+                        fontWeight: FontWeight.bold, fontSize: 15),
                   ),
                 ),
               ],
@@ -117,17 +117,18 @@ class _PaymentScreenState extends State<PaymentScreen> {
                       color: Colors.grey.shade300,
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: const Row(
+                    child: Row(
                       children: [
                         Padding(
-                          padding: EdgeInsets.all(20.0),
+                          padding: const EdgeInsets.all(20.0),
                           child: Row(
                             children: [
-                              Icon(Icons.credit_card, size: 25),
-                              SizedBox(width: 8),
+                              const Icon(Icons.credit_card, size: 25),
+                              const SizedBox(width: 8),
                               Text(
                                 "Card number: 0000 0000 0000 0000",
-                                style: TextStyle(fontSize: 15),
+                                style: GoogleFonts.ubuntu(
+                                    color: Colors.black, fontSize: 16),
                               ),
                             ],
                           ),
@@ -141,14 +142,19 @@ class _PaymentScreenState extends State<PaymentScreen> {
             Expanded(
               child: Container(),
             ),
-            const Padding(
-              padding: EdgeInsets.all(8.0),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  Icon(Icons.shield),
-                  SizedBox(width: 10),
+                  const Icon(Icons.shield),
+                  const SizedBox(width: 10),
                   Text(
-                      "This transaction is secure and guaranteed under\n our Terms and Conditions"),
+                    "This transaction is secure and guaranteed under\n our Terms and Conditions",
+                    style: GoogleFonts.ubuntu(
+                        color: Colors.black,
+                        fontSize: 15,
+                        fontWeight: FontWeight.w300),
+                  ),
                 ],
               ),
             ),
@@ -160,17 +166,17 @@ class _PaymentScreenState extends State<PaymentScreen> {
                       color: const Color(0xff005d63),
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: const Row(
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: EdgeInsets.all(20.0),
+                          padding: const EdgeInsets.all(20.0),
                           child: Text(
                             "Pay now",
-                            style: TextStyle(
-                                fontSize: 18,
+                            style: GoogleFonts.ubuntu(
                                 color: Colors.white,
-                                fontWeight: FontWeight.bold),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20),
                           ),
                         ),
                       ],
