@@ -44,7 +44,7 @@ class _BottomBarState extends State<BottomBar> {
               },
             ),
             IconButton(
-              icon: const Icon(Icons.notifications),
+              icon: const Icon(Icons.qr_code_scanner, size: 40),
               onPressed: () {
                 setState(() {
                   currentScreen = const NotificationScreen();

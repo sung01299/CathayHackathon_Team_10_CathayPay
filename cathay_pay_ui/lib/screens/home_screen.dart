@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cathay_pay_ui/screens/notification_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -22,12 +23,21 @@ class _MyHomeScreenState extends State<HomeScreen> {
           ),
         ),
         centerTitle: true,
-        actions: const <Widget>[
+        actions: <Widget>[
           Padding(
-            padding: EdgeInsets.all(8.0),
-            child: CircleAvatar(
-              backgroundImage: AssetImage('assets/images/rice.png'),
-              radius: 25,
+            padding: const EdgeInsets.all(8.0),
+            child: IconButton(
+              icon: const Icon(
+                Icons.notifications,
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const NotificationScreen(),
+                  ),
+                );
+              },
             ),
           ),
         ],
@@ -140,20 +150,26 @@ class _MyHomeScreenState extends State<HomeScreen> {
                               padding: EdgeInsets.fromLTRB(10, 20, 10, 20),
                               child: Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                    MainAxisAlignment.spaceBetween,
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                  Icon(Icons.credit_card),
-                                  Text(
-                                    "Credit Card / **** 7798",
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      color: Color(0xff005d63),
-                                    ),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.credit_card),
+                                      SizedBox(width: 10),
+                                      Text(
+                                        "Credit Card / **** 7798",
+                                        style: TextStyle(
+                                          fontSize: 18,
+                                          color: Color(0xff005d63),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                   Icon(
                                     Icons.arrow_right,
                                     color: Color(0xff005d63),
+                                    size: 35,
                                   ),
                                 ],
                               ),
