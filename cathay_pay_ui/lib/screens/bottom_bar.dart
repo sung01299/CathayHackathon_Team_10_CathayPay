@@ -1,6 +1,7 @@
+import 'package:cathay_pay_ui/screens/payment_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:cathay_pay_ui/screens/home_screen.dart';
-import 'package:cathay_pay_ui/screens/notification_screen.dart';
+import 'package:cathay_pay_ui/screens/qr_code_screen.dart';
 
 class BottomBar extends StatefulWidget {
   static const String routeName = '/actual-home';
@@ -16,7 +17,8 @@ class _BottomBarState extends State<BottomBar> {
 
   final List<Widget> screens = [
     const HomeScreen(),
-    const NotificationScreen(),
+    // const NotificationScreen(),
+    const QrCodeScreen(),
     // Add more slides
   ];
 
@@ -46,14 +48,22 @@ class _BottomBarState extends State<BottomBar> {
             IconButton(
               icon: const Icon(Icons.qr_code_scanner, size: 40),
               onPressed: () {
-                setState(() {
-                  currentScreen = const NotificationScreen();
-                });
+                setState(
+                  () {
+                    currentScreen = const QrCodeScreen();
+                  },
+                );
               },
             ),
             IconButton(
               icon: const Icon(Icons.credit_card),
-              onPressed: () => {},
+              onPressed: () => {
+                setState(
+                  () {
+                    currentScreen = const PaymentScreen();
+                  },
+                ),
+              },
             ),
           ],
         ),
