@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class QrCodeScreen extends StatelessWidget {
   const QrCodeScreen({super.key});
@@ -8,31 +9,14 @@ class QrCodeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF005d63),
       appBar: AppBar(
-        title: const Text(
+        title: Text(
           "QR Code",
-          style: TextStyle(
-            color: Color(0xFF005d63),
-            fontWeight: FontWeight.bold,
-            fontSize: 25,
-          ),
+          style: GoogleFonts.ubuntu(
+              color: const Color(0xff005d63),
+              fontWeight: FontWeight.bold,
+              fontSize: 25),
         ),
         centerTitle: true,
-        // actions: <Widget>[
-        //   Padding(
-        //     padding: const EdgeInsets.all(12.0),
-        //     child: IconButton(
-        //       icon: const Icon(Icons.close),
-        //       onPressed: () {
-        //         Navigator.push(
-        //           context,
-        //           MaterialPageRoute(
-        //             builder: (context) => const HomeScreen(),
-        //           ),
-        //         );
-        //       },
-        //     ),
-        //   ),
-        // ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
@@ -51,7 +35,7 @@ class QrCodeScreen extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(0, 8, 0, 8),
                     child: Image(
                         image: AssetImage('assets/images/Code-128.png'),
-                        width: 400,
+                        width: 318,
                         height: 80),
                   ),
                 )
