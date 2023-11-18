@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NotificationRow extends StatelessWidget {
   final IconData icon;
@@ -33,7 +34,8 @@ class NotificationRow extends StatelessWidget {
                         const SizedBox(width: 5),
                         Text(
                           text,
-                          style: const TextStyle(fontSize: 15),
+                          style: GoogleFonts.ubuntu(
+                              color: Colors.black, fontSize: 15),
                         ),
                       ],
                     ),

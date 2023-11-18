@@ -27,9 +27,8 @@ class _MyHomeScreenState extends State<HomeScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: IconButton(
-              icon: const Icon(
-                Icons.notifications,
-              ),
+              icon: const Icon(Icons.notifications,
+                  color: Color(0xff005d63), size: 30),
               onPressed: () {
                 Navigator.push(
                   context,

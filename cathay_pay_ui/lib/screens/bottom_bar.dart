@@ -36,7 +36,7 @@ class _BottomBarState extends State<BottomBar> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
-              icon: const Icon(Icons.home),
+              icon: const Icon(Icons.home, size: 35),
               onPressed: () {
                 setState(
                   () {
@@ -46,7 +46,7 @@ class _BottomBarState extends State<BottomBar> {
               },
             ),
             IconButton(
-              icon: const Icon(Icons.qr_code_scanner, size: 40),
+              icon: const Icon(Icons.qr_code_scanner, size: 45),
               onPressed: () {
                 setState(
                   () {
@@ -56,7 +56,7 @@ class _BottomBarState extends State<BottomBar> {
               },
             ),
             IconButton(
-              icon: const Icon(Icons.credit_card),
+              icon: const Icon(Icons.credit_card, size: 35),
               onPressed: () => {
                 setState(
                   () {
