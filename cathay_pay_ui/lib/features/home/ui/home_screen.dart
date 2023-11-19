@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cathay_pay_ui/features/notification/ui/notification_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:cathay_pay_ui/models/ModelProvider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -10,6 +11,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _MyHomeScreenState extends State<HomeScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -90,12 +92,12 @@ class _MyHomeScreenState extends State<HomeScreen> {
                           ),
                           const SizedBox(height: 20),
                           Text(
-                            "Current Balance: \$3309.00",
+                            "Current Balance: \$$user.currentBalance",
                             style: GoogleFonts.ubuntu(
                                 color: const Color(0xff005d63), fontSize: 25),
                           ),
                           Text(
-                            "Asia Miles Gained: \$679.90",
+                            "Asia Miles Gained: \$$user.asiaMilesBalance",
                             style: GoogleFonts.ubuntu(
                                 color: const Color(0xff005d63), fontSize: 25),
                           ),

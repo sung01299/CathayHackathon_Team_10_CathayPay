@@ -12,26 +12,6 @@ class HomeRepository {
 
   final HomeAPIService homeAPIService;
 
-  // Future<List<Trip>> getTrips() {
-  //   return tripsAPIService.getTrips();
-  // }
-
-  // Future<List<Trip>> getPastTrips() {
-  //   return tripsAPIService.getPastTrips();
-  // }
-
-  // Future<void> add(Trip trip) async {
-  //   return tripsAPIService.addTrip(trip);
-  // }
-
-  // Future<void> update(Trip updatedTrip) async {
-  //   return tripsAPIService.updateTrip(updatedTrip);
-  // }
-
-  // Future<void> delete(Trip deletedTrip) async {
-  //   return tripsAPIService.deleteTrip(deletedTrip);
-  // }
-
   Future<User> getUser(String userId) async {
     return homeAPIService.getUser(userId);
   }
