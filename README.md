@@ -1,1 +1,1 @@
-# Cathay_Pay_UI
+# Cathay Pay (AWS Amplify Integration)
